@@ -24,7 +24,7 @@ def c_text(text):
 @app.route('/python/')
 @app.route('/python/<text>')
 def python_text(text='is cool'):
-    """Returns 'Python' followed by modified text (default: 'is cool')."""
+    """Returns 'Python' by modified text (default: 'is cool')."""
     return 'Python {}'.format(text.replace('_', ' '))
 
 if __name__ == '__main__':
